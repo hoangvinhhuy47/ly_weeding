@@ -483,7 +483,7 @@
 </button>
 <button type="button" data-miu-album-item="1" data-miu-album-id="element_album_ubmp7ml9il0" data-idx="7" data-src="/uploads/6a083c7a1e078af3d9fca06d/1778926634946-556103287_1217766157050846_6327095048365604137_n.webp" data-anim-preset="fadeInRight" data-anim-duration="1600" data-anim-delay="0" data-anim-easing="cubic-bezier(0.2,0.8,0.2,1)" data-anim-loop="0" style="all:unset;cursor:pointer;display:block;opacity:0;">
   <div style="width:100%;aspect-ratio:0.6666666666666666;border-radius:12px;overflow:hidden;background:#f3f4f6;position:relative;">
-    <img src="../uploads/6a083c7a1e078af3d9fca06d/LVA01150.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
+    <img src="../uploads/6a083c7a1e078af3d9fca06d/LVA00922.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">
   </div>
 </button>
 <button type="button" data-miu-album-item="1" data-miu-album-id="element_album_ubmp7ml9il0" data-idx="7" data-src="/uploads/6a083c7a1e078af3d9fca06d/1778926634946-556103287_1217766157050846_6327095048365604137_n.webp" data-anim-preset="fadeInRight" data-anim-duration="1600" data-anim-delay="0" data-anim-easing="cubic-bezier(0.2,0.8,0.2,1)" data-anim-loop="0" style="all:unset;cursor:pointer;display:block;opacity:0;">
@@ -2058,6 +2058,7 @@
     };
 
     var openAt = function(albumId, idx){
+      return;
       var modal = ensureModal();
       var imgs = [];
       try {
@@ -2069,7 +2070,7 @@
       } catch(e) {}
       if (!imgs.length) return;
       preloadAll(albumId, imgs);
-      state.open = true;
+      state.open = false;
       state.albumId = albumId;
       state.imgs = imgs;
       state.idx = Math.max(0, Math.min(imgs.length - 1, idx || 0));
